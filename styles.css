@@ -1,5 +1,8 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("img/bg.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 body {
@@ -17,6 +20,8 @@ a:hover {
 
 hr {
     border-top: 1px dotted #000;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 textarea {
@@ -78,21 +83,30 @@ li {
 }
 
 .container {    
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
 
     margin: auto;
     padding: 1rem;
 
-    width: clamp(45ch, 50%, 80ch);
+    width: clamp(45ch, 100%, 100ch);
     min-height: 100vh;
 
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+
+    background-color: white;
 }
 
 .logo-section {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
+    gap: 8px;
+}
+
+.logo-section > .icon-text:first-of-type {
+    margin-left: auto;
 }
 
 .pre-nav {
@@ -101,7 +115,7 @@ li {
     gap: 16px;
 }
 
-.pre-nav h1 {
+.pre-nav > p {
     max-width: 50%;
     margin: 0;
 }
@@ -114,9 +128,3 @@ li {
     display: flex;
     gap: 16px;
 }
-
-.footer-section {
-    display: flex;
-    justify-content: center;
-}
-

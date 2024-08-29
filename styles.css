@@ -1,0 +1,122 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    color: rgb(255, 134, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border-top: 1px dotted #000;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-grow: 0;
+}
+
+.icon-text p {
+    margin: 0;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.unimportant-text {
+    color: grey;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(255, 134, 0);
+}
+
+.message-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.message-container img {
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.message-container p {
+    margin: 0;
+}
+
+.message-prefix {
+    display: flex;
+    gap: 0.5em;
+}
+
+.container {    
+    box-sizing: border-box;
+
+    margin: auto;
+    padding: 1rem;
+
+    width: clamp(45ch, 50%, 80ch);
+    min-height: 100vh;
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pre-nav {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.pre-nav h1 {
+    max-width: 50%;
+    margin: 0;
+}
+
+.pre-nav > .icon-text:first-of-type {
+    margin-left: auto;
+}
+
+.nav-section {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: center;
+}
+

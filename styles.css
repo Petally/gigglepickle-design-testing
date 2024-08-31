@@ -31,6 +31,7 @@ hr {
     border-top: 1px dotted #000;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
 }
 
 textarea {
@@ -42,6 +43,7 @@ textarea {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
@@ -97,7 +99,7 @@ li {
     flex-direction: column;
     box-sizing: border-box;
 
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
 
     width: clamp(45ch, 100%, 120ch);
     min-height: 100vh;
@@ -114,6 +116,13 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
+}
+
+.logo-section-wrapper {
+    position: sticky;
+    top: 0px; 
+    padding-top: 1rem;
+    background-color: white;
 }
 
 .notifications-button {

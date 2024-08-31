@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Gohu Mono";
+    src: url("fonts/gohufont.ttf") format("truetype");
+}
+
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gohu Mono', 'ＭＳ Ｐゴシック', Georgia, Arial, Helvetica, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     background-image: url("img/bg.png");
     background-position: bottom;
     background-repeat: repeat-x;
@@ -7,6 +13,9 @@ html {
 
 body {
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -87,10 +96,9 @@ li {
     flex-direction: column;
     box-sizing: border-box;
 
-    margin: auto;
     padding: 1rem;
 
-    width: clamp(45ch, 100%, 100ch);
+    width: clamp(45ch, 100%, 120ch);
     min-height: 100vh;
 
     border-left: solid 1px grey;
@@ -102,29 +110,20 @@ li {
 .logo-section {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
-.logo-section > .icon-text:first-of-type {
-    margin-left: auto;
-}
-
-.pre-nav {
-    display: flex;
-    align-items: flex-end;
-    gap: 16px;
-}
-
-.pre-nav > p {
-    max-width: 50%;
-    margin: 0;
-}
-
-.pre-nav > .icon-text:first-of-type {
+.notifications-button {
     margin-left: auto;
 }
 
 .nav-section {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.nav-section .icon-text {
+    margin: 0px 4px 0px 4px;
 }

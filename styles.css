@@ -36,6 +36,7 @@ hr {
 textarea {
     resize: none;
     width: 100%;
+    margin-top: auto;
 }
 
 ul {
@@ -126,4 +127,10 @@ li {
 
 .nav-section .icon-text {
     margin: 0px 4px 0px 4px;
+}
+
+.main-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }

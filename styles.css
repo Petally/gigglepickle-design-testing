@@ -148,6 +148,8 @@ li {
     top: 0px; 
     padding-top: 1rem;
     background-color: white;
+
+    z-index: 2;
 }
 
 .notifications-button {
